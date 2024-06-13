@@ -1,0 +1,11 @@
+D:\응용소프트웨어실습\chattingproject\chattingproject\bin\Debug\chattingproject.exe.config
+D:\응용소프트웨어실습\chattingproject\chattingproject\bin\Debug\chattingproject.exe
+D:\응용소프트웨어실습\chattingproject\chattingproject\bin\Debug\chattingproject.pdb
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.AssemblyReference.cache
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.ClientForm.resources
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.Properties.Resources.resources
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.ServerForm.resources
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.GenerateResource.cache
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.CoreCompileInputs.cache
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.exe
+D:\응용소프트웨어실습\chattingproject\chattingproject\obj\Debug\chattingproject.pdb
