@@ -103,6 +103,8 @@
             this.NicknameTextBox.Name = "NicknameTextBox";
             this.NicknameTextBox.Size = new System.Drawing.Size(176, 20);
             this.NicknameTextBox.TabIndex = 9;
+            this.NicknameTextBox.Text = "닉네임을 입력해 주세요";
+            this.NicknameTextBox.Click += new System.EventHandler(this.NicknameTextBox_Click);
 
             // SetNicknameButton
             this.SetNicknameButton.Location = new System.Drawing.Point(194, 65);

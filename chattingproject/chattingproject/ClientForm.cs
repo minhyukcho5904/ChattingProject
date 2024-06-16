@@ -19,6 +19,9 @@ namespace chattingproject
 
         private void ClientForm_Load(object sender, EventArgs e)
         {
+            // 기본 닉네임 설정
+            _nickname = "익명";
+
             // 실시간 시계 타이머 설정
             clockTimer.Interval = 1000; // 1초마다 틱
             clockTimer.Tick += UpdateClock;
@@ -29,6 +32,12 @@ namespace chattingproject
         private void UpdateClock(object sender, EventArgs e)
         {
             CurrentTimeLabel.Text = "Current Time: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        }
+
+        // 닉네임 텍스트 박스를 클릭할 때 모든 텍스트를 선택하는 이벤트 핸들러
+        private void NicknameTextBox_Click(object sender, EventArgs e)
+        {
+            NicknameTextBox.SelectAll();
         }
 
         // 서버에 연결하는 버튼 클릭 이벤트 핸들러
@@ -56,7 +65,7 @@ namespace chattingproject
         // 닉네임 설정 버튼 클릭 이벤트 핸들러
         private void SetNicknameButton_Click(object sender, EventArgs e)
         {
-            _nickname = NicknameTextBox.Text;
+            _nickname = string.IsNullOrWhiteSpace(NicknameTextBox.Text) ? "익명" : NicknameTextBox.Text;
             NicknameTextBox.Enabled = false;
             SetNicknameButton.Enabled = false;
         }
