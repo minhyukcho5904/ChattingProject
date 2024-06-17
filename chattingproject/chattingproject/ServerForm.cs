@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -22,7 +23,6 @@ namespace chattingproject
             _clients = new List<TcpClient>();
         }
 
-        // 서버 시작 버튼 클릭 이벤트 핸들러
         private void StartButton_Click(object sender, EventArgs e)
         {
             _serverThread = new Thread(StartServer);
@@ -32,7 +32,6 @@ namespace chattingproject
             StopButton.Enabled = true;
         }
 
-        // 서버를 시작하는 메서드
         private void StartServer()
         {
             _listener = new TcpListener(IPAddress.Any, 8888);
@@ -59,7 +58,6 @@ namespace chattingproject
             }
         }
 
-        // 클라이언트 연결을 처리하는 메서드
         private void HandleClient(object obj)
         {
             TcpClient client = (TcpClient)obj;
@@ -76,8 +74,24 @@ namespace chattingproject
                         if (byteCount == 0) break;
 
                         string message = Encoding.UTF8.GetString(buffer, 0, byteCount);
-                        BroadcastMessage(message, client);
-                        HandleSpecialMessage(message); // 추가된 메서드 호출
+                        if (message.Contains("|emoji|"))
+                        {
+                            int imageLength = int.Parse(message.Split('|')[3]);
+                            byte[] imageBuffer = new byte[imageLength];
+                            int totalBytesRead = 0;
+                            while (totalBytesRead < imageLength)
+                            {
+                                int bytesRead = stream.Read(imageBuffer, totalBytesRead, imageLength - totalBytesRead);
+                                if (bytesRead == 0) throw new IOException("Connection closed.");
+                                totalBytesRead += bytesRead;
+                            }
+                            BroadcastImage(message, imageBuffer, client);
+                        }
+                        else
+                        {
+                            BroadcastMessage(message, client);
+                            HandleSpecialMessage(message);
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -95,7 +109,6 @@ namespace chattingproject
             Invoke(new Action(() => Log("Client disconnected")));
         }
 
-        // 메시지를 모든 클라이언트에게 브로드캐스트하는 메서드
         private void BroadcastMessage(string message, TcpClient excludeClient)
         {
             byte[] buffer = Encoding.UTF8.GetBytes(message);
@@ -113,19 +126,34 @@ namespace chattingproject
             }
         }
 
-        // 로그를 추가하는 메서드
+        private void BroadcastImage(string header, byte[] imageBuffer, TcpClient excludeClient)
+        {
+            byte[] headerBuffer = Encoding.UTF8.GetBytes(header);
+
+            lock (_lock)
+            {
+                foreach (var client in _clients)
+                {
+                    if (client != excludeClient)
+                    {
+                        NetworkStream stream = client.GetStream();
+                        stream.Write(headerBuffer, 0, headerBuffer.Length);
+                        stream.Write(imageBuffer, 0, imageBuffer.Length);
+                    }
+                }
+            }
+        }
+
         private void Log(string message)
         {
             LogListBox.Items.Add(message);
         }
 
-        // 서버 종료 버튼 클릭 이벤트 핸들러
         private void StopButton_Click(object sender, EventArgs e)
         {
             StopServer();
         }
 
-        // 서버를 종료하는 메서드
         private void StopServer()
         {
             _isRunning = false;
@@ -146,13 +174,11 @@ namespace chattingproject
             StopButton.Enabled = false;
         }
 
-        // 폼이 닫힐 때 서버를 종료하는 이벤트 핸들러
         private void ServerForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopServer();
         }
 
-        // 특수 메시지를 처리하는 메서드
         private void HandleSpecialMessage(string message)
         {
             if (message.StartsWith("CALENDAR|"))
@@ -164,7 +190,6 @@ namespace chattingproject
             }
         }
 
-        // 알림을 스케줄링하는 메서드
         private void ScheduleNotification(DateTime eventTime, string memo)
         {
             TimeSpan timeSpan = eventTime - DateTime.Now;
@@ -175,6 +200,11 @@ namespace chattingproject
                     BroadcastMessage($"ALERT|{DateTime.Now:yyyy-MM-dd HH:mm:ss}|Server|{memo}", null);
                 }, null, timeSpan, System.Threading.Timeout.InfiniteTimeSpan);
             }
+        }
+
+        private void LogListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
