@@ -358,7 +358,6 @@ namespace chattingproject
                 string messageHeader = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}|{_nickname}|emoji|{imageBytes.Length}";
                 byte[] headerBuffer = Encoding.UTF8.GetBytes(messageHeader);
 
-                // Append the emoji to the local chat
                 AppendEmoji(emoji, _nickname, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 
                 _stream.Write(headerBuffer, 0, headerBuffer.Length);
@@ -368,6 +367,36 @@ namespace chattingproject
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        // FlowLayoutPanel에서 텍스트를 가져와 클립보드에 복사하는 메서드
+        private void CopyTextToClipboard()
+        {
+            string text = GetTextFromFlowLayoutPanel();
+            Clipboard.SetText(text);
+            MessageBox.Show("텍스트가 클립보드에 복사되었습니다.");
+        }
+
+        // FlowLayoutPanel에서 텍스트를 가져오는 메서드
+        private string GetTextFromFlowLayoutPanel()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Control control in MessagesFlowLayoutPanel.Controls)
+            {
+                if (control is Label label)
+                {
+                    sb.AppendLine(label.Text);
+                }
+                else if (control is PictureBox)
+                {
+                    sb.AppendLine("[이미지]");
+                }
+            }
+            return sb.ToString();
+        }
+        private void btn_copy_Click(object sender, EventArgs e)
+        {
+            CopyTextToClipboard();
         }
     }
 }

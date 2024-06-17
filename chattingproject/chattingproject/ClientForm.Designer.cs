@@ -46,6 +46,7 @@
             this.btn_emoji_send = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.MessagesFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_copy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_emoji)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,11 +218,22 @@
             this.MessagesFlowLayoutPanel.TabIndex = 18;
             this.MessagesFlowLayoutPanel.WrapContents = false;
             // 
+            // btn_copy
+            // 
+            this.btn_copy.Location = new System.Drawing.Point(1080, 442);
+            this.btn_copy.Name = "btn_copy";
+            this.btn_copy.Size = new System.Drawing.Size(143, 39);
+            this.btn_copy.TabIndex = 19;
+            this.btn_copy.Text = "내용 전체복사";
+            this.btn_copy.UseVisualStyleBackColor = true;
+            this.btn_copy.Click += new System.EventHandler(this.btn_copy_Click);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1406, 763);
+            this.Controls.Add(this.btn_copy);
             this.Controls.Add(this.MessagesFlowLayoutPanel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_emoji_send);
@@ -255,5 +267,6 @@
         private System.Windows.Forms.Button btn_emoji_send;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel MessagesFlowLayoutPanel;
+        private System.Windows.Forms.Button btn_copy;
     }
 }
