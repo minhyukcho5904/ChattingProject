@@ -425,5 +425,18 @@ namespace chattingproject
         {
             SendEmoji(pb_image_recent.Image);
         }
+
+        private void btnCalendarSave_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw;
+            sw = new StreamWriter("Log.txt");
+            int nCount = CalendarEventsListBox.Items.Count;
+            for (int i = 0; i < nCount; i++)
+            {
+                CalendarEventsListBox.Items[i] += "\r\n";
+                sw.Write(CalendarEventsListBox.Items[i]);
+            }
+            sw.Close();
+        }
     }
 }
