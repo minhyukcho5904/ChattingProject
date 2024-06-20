@@ -28,8 +28,10 @@ namespace chattingproject
 
         private void ClientForm_Load(object sender, EventArgs e)
         {
+            // 기본 닉네임 설정
             _nickname = "익명";
-            clockTimer.Interval = 1000;
+            // 실시간 시계 타이머 설정
+            clockTimer.Interval = 1000;// 1초마다 틱
             clockTimer.Tick += UpdateClock;
             clockTimer.Start();
             MessagesFlowLayoutPanel.FlowDirection = FlowDirection.TopDown;
@@ -37,16 +39,19 @@ namespace chattingproject
             MessagesFlowLayoutPanel.AutoScroll = true;
         }
 
+        // 실시간 시계를 업데이트하는 메서드
         private void UpdateClock(object sender, EventArgs e)
         {
             CurrentTimeLabel.Text = "Current Time: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
+        // 닉네임 텍스트 박스를 클릭할 때 모든 텍스트를 선택하는 이벤트 핸들러
         private void NicknameTextBox_Click(object sender, EventArgs e)
         {
             NicknameTextBox.SelectAll();
         }
 
+        // 서버에 연결하는 버튼 클릭 이벤트 핸들러
         private void ConnectButton_Click(object sender, EventArgs e)
         {
             try
@@ -79,12 +84,13 @@ namespace chattingproject
             SendMessage();
         }
 
+        // 메시지 입력 후 Enter 키를 누르면 메시지 전송
         private void MessageTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 SendMessage();
-                e.SuppressKeyPress = true;
+                e.SuppressKeyPress = true;// Enter 키 입력 소리를 없애기 위해
             }
         }
 
@@ -96,7 +102,7 @@ namespace chattingproject
                 string message = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}|{_nickname}|{MessageTextBox.Text}";
                 byte[] buffer = Encoding.UTF8.GetBytes(message);
                 _stream.Write(buffer, 0, buffer.Length);
-                AppendMessage(message);
+                AppendMessage(message);// 로컬 메시지 리스트에 메시지 추가
                 MessageTextBox.Clear();
             }
             catch (Exception ex)
@@ -134,6 +140,7 @@ namespace chattingproject
                     else
                     {
                         AppendMessage(messageHeader);
+                        HandleSpecialMessage(messageHeader); // 추가된 메서드 호출
                     }
                 }
                 catch (Exception ex)
@@ -145,6 +152,8 @@ namespace chattingproject
             }
         }
 
+
+        // 수신한 이모지를 클라이언트 UI에 추가하는 메서드 
         private void AppendEmoji(Image emoji, string senderName, string timestamp)
         {
             if (InvokeRequired)
@@ -172,6 +181,7 @@ namespace chattingproject
             MessagesFlowLayoutPanel.ScrollControlIntoView(emojiPictureBox);
         }
 
+        // 수신한 메시지를 클라이언트 UI에 추가하는 메서드
         private void AppendMessage(string message)
         {
             if (InvokeRequired)
@@ -199,6 +209,7 @@ namespace chattingproject
             }
         }
 
+        // 캘린더 이벤트 설정 버튼 클릭 이벤트 핸들러
         private void SetCalendarEventButton_Click(object sender, EventArgs e)
         {
             try
@@ -209,7 +220,7 @@ namespace chattingproject
                 byte[] buffer = Encoding.UTF8.GetBytes(message);
                 _stream.Write(buffer, 0, buffer.Length);
                 CalendarEventTextBox.Clear();
-                AddCalendarEvent(eventDetails);
+                AddCalendarEvent(eventDetails); // 로컬 캘린더 이벤트 추가
             }
             catch (Exception ex)
             {
@@ -217,6 +228,8 @@ namespace chattingproject
             }
         }
 
+
+        // 수신한 특수 메시지를 처리하는 메서드
         private void HandleSpecialMessage(string message)
         {
             if (message.StartsWith("CALENDAR|"))
@@ -231,6 +244,7 @@ namespace chattingproject
             }
         }
 
+        // 로컬 캘린더 이벤트를 추가하는 메서드
         private void AddCalendarEvent(string eventDetails)
         {
             if (InvokeRequired)
@@ -242,6 +256,7 @@ namespace chattingproject
             CalendarEventsListBox.Items.Add(eventDetails);
         }
 
+        // 알림 창을 표시하는 메서드
         private void ShowAlert(string alertDetails)
         {
             if (InvokeRequired)

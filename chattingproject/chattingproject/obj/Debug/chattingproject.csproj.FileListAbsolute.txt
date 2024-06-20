@@ -43,3 +43,15 @@ C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.exe
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.pdb
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.NotepadForm.resources
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\bin\Debug\chattingproject.exe.config
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\bin\Debug\chattingproject.exe
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\bin\Debug\chattingproject.pdb
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.AssemblyReference.cache
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.ClientForm.resources
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.NotepadForm.resources
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.Properties.Resources.resources
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.ServerForm.resources
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.GenerateResource.cache
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.CoreCompileInputs.cache
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.exe
+C:\Users\qlqlt\source\repos\teamproject_chat\chattingproject\chattingproject\obj\Debug\chattingproject.pdb

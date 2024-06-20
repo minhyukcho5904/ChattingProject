@@ -190,6 +190,7 @@ namespace chattingproject
             }
         }
 
+        // 알림을 스케줄링하는 메서드
         private void ScheduleNotification(DateTime eventTime, string memo)
         {
             TimeSpan timeSpan = eventTime - DateTime.Now;
