@@ -401,5 +401,29 @@ namespace chattingproject
         {
             CopyTextToClipboard();
         }
+        private void UploadImage()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp",
+                Title = "Select an Image"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Image uploadedImage = Image.FromFile(openFileDialog.FileName);
+                pb_image_recent.Image = uploadedImage;
+            }
+        }
+
+        private void btn_image_upload_Click(object sender, EventArgs e)
+        {
+            UploadImage();
+        }
+
+        private void btn_image_send_Click(object sender, EventArgs e)
+        {
+            SendEmoji(pb_image_recent.Image);
+        }
     }
 }

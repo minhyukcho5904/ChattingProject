@@ -47,7 +47,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.MessagesFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_copy = new System.Windows.Forms.Button();
+            this.pb_image_recent = new System.Windows.Forms.PictureBox();
+            this.btn_image_upload = new System.Windows.Forms.Button();
+            this.btn_image_send = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_emoji)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image_recent)).BeginInit();
             this.SuspendLayout();
             // 
             // ConnectButton
@@ -232,11 +238,65 @@
             this.btn_copy.UseVisualStyleBackColor = true;
             this.btn_copy.Click += new System.EventHandler(this.btn_copy_Click);
             // 
+            // pb_image_recent
+            // 
+            this.pb_image_recent.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_image_recent.Location = new System.Drawing.Point(1080, 269);
+            this.pb_image_recent.Name = "pb_image_recent";
+            this.pb_image_recent.Size = new System.Drawing.Size(181, 181);
+            this.pb_image_recent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_image_recent.TabIndex = 20;
+            this.pb_image_recent.TabStop = false;
+            // 
+            // btn_image_upload
+            // 
+            this.btn_image_upload.AllowDrop = true;
+            this.btn_image_upload.Location = new System.Drawing.Point(1080, 474);
+            this.btn_image_upload.Name = "btn_image_upload";
+            this.btn_image_upload.Size = new System.Drawing.Size(181, 34);
+            this.btn_image_upload.TabIndex = 21;
+            this.btn_image_upload.Text = "이미지 업로드";
+            this.btn_image_upload.UseVisualStyleBackColor = true;
+            this.btn_image_upload.Click += new System.EventHandler(this.btn_image_upload_Click);
+            // 
+            // btn_image_send
+            // 
+            this.btn_image_send.Location = new System.Drawing.Point(1080, 514);
+            this.btn_image_send.Name = "btn_image_send";
+            this.btn_image_send.Size = new System.Drawing.Size(181, 30);
+            this.btn_image_send.TabIndex = 22;
+            this.btn_image_send.Text = "이미지 보내기";
+            this.btn_image_send.UseVisualStyleBackColor = true;
+            this.btn_image_send.Click += new System.EventHandler(this.btn_image_send_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1077, 251);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 15);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "최근에 업로드한 이미지";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1080, 456);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(314, 15);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "(미리보기에서는 사이즈가 다를 수 있습니다.)";
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1406, 763);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_image_send);
+            this.Controls.Add(this.btn_image_upload);
+            this.Controls.Add(this.pb_image_recent);
             this.Controls.Add(this.btn_copy);
             this.Controls.Add(this.MessagesFlowLayoutPanel);
             this.Controls.Add(this.label1);
@@ -259,6 +319,7 @@
             this.Text = "Chat Client";
             this.Load += new System.EventHandler(this.ClientForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_emoji)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_image_recent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,5 +333,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel MessagesFlowLayoutPanel;
         private System.Windows.Forms.Button btn_copy;
+        private System.Windows.Forms.PictureBox pb_image_recent;
+        private System.Windows.Forms.Button btn_image_upload;
+        private System.Windows.Forms.Button btn_image_send;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
