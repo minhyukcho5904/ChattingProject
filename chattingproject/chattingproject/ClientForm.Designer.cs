@@ -168,7 +168,7 @@
             // 
             this.pb_emoji.Location = new System.Drawing.Point(1080, 173);
             this.pb_emoji.Name = "pb_emoji";
-            this.pb_emoji.Size = new System.Drawing.Size(16, 16);
+            this.pb_emoji.Size = new System.Drawing.Size(43, 35);
             this.pb_emoji.TabIndex = 13;
             this.pb_emoji.TabStop = false;
             // 

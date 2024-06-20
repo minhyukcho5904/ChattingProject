@@ -20,3 +20,14 @@ C:\Users\qlqlt\source\repos\chatprogram\chattingproject\chattingproject\obj\Debu
 C:\Users\qlqlt\source\repos\chatprogram\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.CoreCompileInputs.cache
 C:\Users\qlqlt\source\repos\chatprogram\chattingproject\chattingproject\obj\Debug\chattingproject.exe
 C:\Users\qlqlt\source\repos\chatprogram\chattingproject\chattingproject\obj\Debug\chattingproject.pdb
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\bin\Debug\chattingproject.exe.config
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\bin\Debug\chattingproject.exe
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\bin\Debug\chattingproject.pdb
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.AssemblyReference.cache
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.ClientForm.resources
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.Properties.Resources.resources
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.ServerForm.resources
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.GenerateResource.cache
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.CoreCompileInputs.cache
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.exe
+C:\Users\qlqlt\source\repos\chatprogram_real\chattingproject\chattingproject\obj\Debug\chattingproject.pdb
