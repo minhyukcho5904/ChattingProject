@@ -42,3 +42,4 @@ C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.csproj.CoreCompileInputs.cache
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.exe
 C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.pdb
+C:\Users\youjiyoun\Documents\ChattingProject\chattingproject\chattingproject\obj\Debug\chattingproject.NotepadForm.resources

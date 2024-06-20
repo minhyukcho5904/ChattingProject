@@ -438,5 +438,11 @@ namespace chattingproject
             }
             sw.Close();
         }
+
+        private void btnOpenNotepad_Click(object sender, EventArgs e)
+        {
+            NotepadForm notepadForm = new NotepadForm();
+            notepadForm.ShowDialog();
+        }
     }
 }

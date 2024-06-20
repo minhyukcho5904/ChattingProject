@@ -53,6 +53,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCalendarSave = new System.Windows.Forms.Button();
+            this.btnOpenNotepad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_emoji)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image_recent)).BeginInit();
             this.SuspendLayout();
@@ -308,11 +309,23 @@
             this.btnCalendarSave.UseVisualStyleBackColor = true;
             this.btnCalendarSave.Click += new System.EventHandler(this.btnCalendarSave_Click);
             // 
+            // btnOpenNotepad
+            // 
+            this.btnOpenNotepad.Location = new System.Drawing.Point(944, 11);
+            this.btnOpenNotepad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOpenNotepad.Name = "btnOpenNotepad";
+            this.btnOpenNotepad.Size = new System.Drawing.Size(125, 31);
+            this.btnOpenNotepad.TabIndex = 26;
+            this.btnOpenNotepad.Text = "메모장";
+            this.btnOpenNotepad.UseVisualStyleBackColor = true;
+            this.btnOpenNotepad.Click += new System.EventHandler(this.btnOpenNotepad_Click);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 610);
+            this.Controls.Add(this.btnOpenNotepad);
             this.Controls.Add(this.btnCalendarSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -361,5 +374,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCalendarSave;
+        private System.Windows.Forms.Button btnOpenNotepad;
     }
 }
