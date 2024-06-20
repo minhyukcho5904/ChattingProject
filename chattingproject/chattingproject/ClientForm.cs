@@ -12,7 +12,8 @@ namespace chattingproject
     public partial class ClientForm : Form
     {
         private int emoji_index = 0;
-        private int emoji_index_max = 1;
+        //imagelist의 인덱스의 끝 번호입니다.
+        private int emoji_index_max = 5;
         private TcpClient _client;
         private NetworkStream _stream;
         private string _nickname;
@@ -21,6 +22,7 @@ namespace chattingproject
         public ClientForm()
         {
             InitializeComponent();
+            //pb_emoji(picturebox)의 index를 imagelist와 동기화 하는 작업입니다.
             pb_emoji.Image = imageList1.Images[0];
         }
 
@@ -394,6 +396,7 @@ namespace chattingproject
             }
             return sb.ToString();
         }
+        // 텍스트 전체복사 기능 클릭입니다.(위 2개의 메서드와 연동됩니다.)
         private void btn_copy_Click(object sender, EventArgs e)
         {
             CopyTextToClipboard();

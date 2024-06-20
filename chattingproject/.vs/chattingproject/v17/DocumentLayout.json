@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|c:\\users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|solutionrelative:chattingproject\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|solutionrelative:chattingproject\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|c:\\users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|solutionrelative:chattingproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -25,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|solutionrelative:chattingproject\\serverform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E55D84D0-0EFF-473F-9E82-E91CC27C3CF6}|chattingproject\\chattingproject.csproj|solutionrelative:chattingproject\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +34,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 326,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\Program.cs",
+              "RelativeDocumentMoniker": "chattingproject\\Program.cs",
+              "ToolTip": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\Program.cs",
+              "RelativeToolTip": "chattingproject\\Program.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwBAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T11:35:25.561Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ClientForm.cs",
+              "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.cs",
+              "RelativeDocumentMoniker": "chattingproject\\ClientForm.cs",
+              "ToolTip": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.cs",
+              "RelativeToolTip": "chattingproject\\ClientForm.cs",
+              "ViewState": "AQIAAHoBAAAAAAAAAAAAAJMBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:23:03.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClientForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.cs",
               "RelativeDocumentMoniker": "chattingproject\\ClientForm.cs",
@@ -54,20 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientForm.cs",
-              "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.cs",
-              "RelativeDocumentMoniker": "chattingproject\\ClientForm.cs",
-              "ToolTip": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.cs",
-              "RelativeToolTip": "chattingproject\\ClientForm.cs",
-              "ViewState": "AQIAAHEBAAAAAAAAAAAuwIQBAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T10:23:03.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ServerForm.cs",
               "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ServerForm.cs",
               "RelativeDocumentMoniker": "chattingproject\\ServerForm.cs",
@@ -79,31 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\Program.cs",
-              "RelativeDocumentMoniker": "chattingproject\\Program.cs",
-              "ToolTip": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\Program.cs",
-              "RelativeToolTip": "chattingproject\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwBAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T11:35:25.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ClientForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.Designer.cs",
               "RelativeDocumentMoniker": "chattingproject\\ClientForm.Designer.cs",
               "ToolTip": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ClientForm.Designer.cs",
               "RelativeToolTip": "chattingproject\\ClientForm.Designer.cs",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAcwAgBAAA1AAAA",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAcwAwBAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T10:22:53.048Z"
+              "WhenOpened": "2024-06-17T10:22:53.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ServerForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\qlqlt\\source\\repos\\chatprogram\\chattingproject\\chattingproject\\ServerForm.cs",
               "RelativeDocumentMoniker": "chattingproject\\ServerForm.cs",

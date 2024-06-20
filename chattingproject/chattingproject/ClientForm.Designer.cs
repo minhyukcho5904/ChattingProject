@@ -157,20 +157,24 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "1482228.png");
-            this.imageList1.Images.SetKeyName(1, "Iconoir-Team-Iconoir-Emoji-ball.512.png");
+            this.imageList1.Images.SetKeyName(0, "Sprite57.png");
+            this.imageList1.Images.SetKeyName(1, "image_bored.png");
+            this.imageList1.Images.SetKeyName(2, "sp_superbored.png");
+            this.imageList1.Images.SetKeyName(3, "sp_fire.png");
+            this.imageList1.Images.SetKeyName(4, "sp_heart.png");
+            this.imageList1.Images.SetKeyName(5, "sp_check.png");
             // 
             // pb_emoji
             // 
             this.pb_emoji.Location = new System.Drawing.Point(1080, 173);
             this.pb_emoji.Name = "pb_emoji";
-            this.pb_emoji.Size = new System.Drawing.Size(214, 199);
+            this.pb_emoji.Size = new System.Drawing.Size(16, 16);
             this.pb_emoji.TabIndex = 13;
             this.pb_emoji.TabStop = false;
             // 
             // btn_prev
             // 
-            this.btn_prev.Location = new System.Drawing.Point(1080, 377);
+            this.btn_prev.Location = new System.Drawing.Point(1080, 204);
             this.btn_prev.Name = "btn_prev";
             this.btn_prev.Size = new System.Drawing.Size(33, 34);
             this.btn_prev.TabIndex = 14;
@@ -180,7 +184,7 @@
             // 
             // btn_next
             // 
-            this.btn_next.Location = new System.Drawing.Point(1119, 377);
+            this.btn_next.Location = new System.Drawing.Point(1119, 205);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(32, 33);
             this.btn_next.TabIndex = 15;
@@ -190,7 +194,7 @@
             // 
             // btn_emoji_send
             // 
-            this.btn_emoji_send.Location = new System.Drawing.Point(1158, 378);
+            this.btn_emoji_send.Location = new System.Drawing.Point(1157, 204);
             this.btn_emoji_send.Name = "btn_emoji_send";
             this.btn_emoji_send.Size = new System.Drawing.Size(136, 33);
             this.btn_emoji_send.TabIndex = 16;
@@ -220,7 +224,7 @@
             // 
             // btn_copy
             // 
-            this.btn_copy.Location = new System.Drawing.Point(1080, 442);
+            this.btn_copy.Location = new System.Drawing.Point(1080, 708);
             this.btn_copy.Name = "btn_copy";
             this.btn_copy.Size = new System.Drawing.Size(143, 39);
             this.btn_copy.TabIndex = 19;
